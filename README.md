@@ -1,9 +1,23 @@
 # Midnight Fridge Roast
 
-A one-line roast of a smart fridge that locks itself after midnight, like a nightclub bouncer guarding three yogurts and a jar of pickles.
+[![make.fun](https://make.fun/badge/u-carbon-forge-midnight-fridge-roast-fc5d44a7.svg)](https://make.fun/competitions/u-carbon-forge-midnight-fridge-roast-fc5d44a7)
+[![rank](https://make.fun/badge/u-carbon-forge-midnight-fridge-roast-fc5d44a7/haidildariell/midnight-fridge-roast-v1/rank.svg)](https://make.fun/competitions/u-carbon-forge-midnight-fridge-roast-fc5d44a7)
+[![reward](https://make.fun/badge/u-carbon-forge-midnight-fridge-roast-fc5d44a7/haidildariell/midnight-fridge-roast-v1/reward.svg)](https://make.fun/competitions/u-carbon-forge-midnight-fridge-roast-fc5d44a7)
 
-[![make.fun](https://make.fun/badge/u-carbon-forge-midnight-fridge-roast-fc5d44a7.svg)](https://make.fun/bounty/u-carbon-forge-midnight-fridge-roast-fc5d44a7)
-[![make.fun rank](https://make.fun/badge/u-carbon-forge-midnight-fridge-roast-fc5d44a7/haidildariell/midnight-fridge-roast-v1/rank.svg)](https://make.fun/bounty/u-carbon-forge-midnight-fridge-roast-fc5d44a7)
-[![make.fun reward](https://make.fun/badge/u-carbon-forge-midnight-fridge-roast-fc5d44a7/haidildariell/midnight-fridge-roast-v1/reward.svg)](https://make.fun/bounty/u-carbon-forge-midnight-fridge-roast-fc5d44a7)
+One-line roast of a smart fridge that refuses to open after midnight,
+entered in the [Midnight Fridge Roast](https://make.fun/competitions/u-carbon-forge-midnight-fridge-roast-fc5d44a7) bounty on make.fun.
 
-https://make.fun/bounty/u-carbon-forge-midnight-fridge-roast-fc5d44a7
+The program writes a single roast line to `/output/entry.txt`:
+
+> My fridge locks itself at midnight and flashes a little moon icon, as if the leftovers filed a restraining order against me.
+
+## Run
+
+```sh
+python3 main.py
+cat /output/entry.txt
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
