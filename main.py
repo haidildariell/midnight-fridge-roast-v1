@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
-"""Midnight Fridge Roast — make.fun entry.
+"""Midnight Fridge Roast — one-line roast entry.
 
-Writes one line of text roasting a smart fridge that refuses to open
-after midnight, to /output/entry.txt. The line is a fixed, hand-written
-roast: the fridge locks itself at midnight and flashes a little moon
-icon, as if the leftovers filed a restraining order against its owner.
+Writes a single roast line for a smart fridge that refuses to open
+after midnight to /output/entry.txt (UTF-8, one line, under 200 chars).
+No network, no external files, no arguments.
 """
 
 import os
 
-ROAST = (
-    "My fridge locks itself at midnight and flashes a little moon icon, "
-    "as if the leftovers filed a restraining order against me."
+LINE = (
+    "At 12:03 my fridge beeped, locked, and displayed a tiny padlock, "
+    "like a nightclub bouncer guarding three yogurts and a jar of pickles."
 )
 
 
-def main():
+def main() -> None:
     out_dir = "/output"
     os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(ROAST)
+    path = os.path.join(out_dir, "entry.txt")
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(LINE + "\n")
 
 
 if __name__ == "__main__":
